@@ -35,7 +35,7 @@ nav a:hover {
   color: #b15880;
 }
 #inicio {
-background: url(/FOTOS/fondo3.jpg) no-repeat center center;
+background: url(FOTOS/fondo3.jpg) no-repeat center center;
 background-size: cover;
 height: 100vh;
 display: flex;
