@@ -58,7 +58,6 @@ z-index: 0;
 .contenido-inicio {
 position: relative;
 z-index: 1;
-  
 }
 #inicio h1 {
 font-family: 'Playfair Display', serif;
@@ -92,9 +91,8 @@ width: 300px;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 transition: transform 0.3s ease;
 }
-
 .bloque:hover {
-  transform: translateY(-8px);
+transform: translateY(-8px);
 }
 .bloque img {
 width: 100%;
@@ -108,7 +106,6 @@ padding: 100px 20px;
 background-color: #fef6f9;
 text-align: center;
 }
-
 .contacto-contenido {
 display: flex;
 flex-wrap: wrap;
@@ -159,7 +156,6 @@ text-align: center;
 font-size: 18px;
 }
 }
-
 .contenido {
 max-width: 600px;
 margin: 50px auto;
@@ -196,4 +192,58 @@ border-radius: 25px;
 font-size: 1rem;
 cursor: pointer;
 transition: background-color 0.3s ease;
+}
+#navbar.oculto {
+transform: translateY(-100%);
+}
+.bloques-contenedor {
+display: grid;
+gap: 10px;
+grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+padding: 0 6px;
+justify-items: center;
+}
+.bloque {
+width: 100%;
+max-width: 220px;
+background: #fff;
+border-radius: 10px;
+padding: 6px 8px;
+box-sizing: border-box;
+text-align: center;
+box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+font-size: 0.8rem;
+overflow: hidden;
+}
+.bloque img {
+width: 100%;
+height: auto;
+border-radius: 6px;
+margin-bottom: 4px;
+object-fit: cover;
+}
+.bloque h3 {
+margin: 4px 0 4px;
+font-size: clamp(0.9rem, 1.1vw, 1rem);
+line-height: 1.1;
+}
+.bloque p {
+margin: 0;
+font-size: clamp(0.65rem, 0.9vw, 0.8rem);
+line-height: 1.2;
+}
+#toggle-btn {
+margin: 14px auto 0;
+display: block;
+padding: 10px 14px;
+font-size: 0.8rem;
+border: none;
+border-radius: 999px;
+background: #d4a373;
+color: white;
+cursor: pointer;
+max-width: 180px;
+}
+.hidden {
+display: none;
 }
